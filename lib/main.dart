@@ -183,30 +183,6 @@ class FavoritesPage extends StatelessWidget {
           )
       ],
     );
-
-    return Center(
-      child: Container(
-        alignment: Alignment.center,
-        width: 500,
-        height: 500,
-        child: Column(
-          children: [
-            Text("My Favorite Words", style: style,),
-            Expanded(
-              child: ListView.builder(
-                itemCount: favoriteWordList.length,
-                itemBuilder: (context, index) {
-                  return ListTile(
-                    leading: Icon(Icons.favorite),
-                    title: Text(favoriteWordList[index].asPascalCase),
-                  );
-                },
-              ),
-            ),
-          ],
-        ),
-      )
-    );
   }
 }
 
